@@ -1,0 +1,8 @@
+<% todos.forEach(todo => { %>
+    <div>
+        <strong><%= todo.title %></strong>
+        <% if (todo.dueDate) { %>
+            - <%= todo.dueDate %>
+        <% } %>
+    </div>
+<% }) %>

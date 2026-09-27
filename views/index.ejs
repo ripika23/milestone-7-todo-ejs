@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo Manager</title>
+</head>
+<body>
+
+    <h1>Todo Manager</h1>
+
+    <h2>Overdue (<%= overdue.length %>)</h2>
+    <%- include("todos", { todos: overdue }) %>
+
+    <h2>Due Today (<%= dueToday.length %>)</h2>
+    <%- include("todos", { todos: dueToday }) %>
+
+    <h2>Due Later (<%= dueLater.length %>)</h2>
+    <%- include("todos", { todos: dueLater }) %>
+
+</body>
+</html>
